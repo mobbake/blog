@@ -1,4 +1,9 @@
-# nvm的使用及配置
+---
+title: nvm的使用及配置
+date: 2018-06-06 15:53:52
+tags: [npm, Node.js]
+categories: Node.js
+---
 
 ## 1. nvm 下载与安装
 
