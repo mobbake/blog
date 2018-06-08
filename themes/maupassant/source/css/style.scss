@@ -198,6 +198,14 @@ div {
         a {
             color: #555;
         }
+        &::before{
+            content: '';
+            width: 58px;
+            display: block;
+            position: absolute;
+            margin-top: -6px;
+            border-top: 2px solid #f90;
+        }
     }
     .post-meta {
         padding: 0;
