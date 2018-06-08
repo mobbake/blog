@@ -161,3 +161,16 @@ git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
 ```
+
+### 参考
+
+[图解git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
+[git教程廖雪峰](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+[git的常用命令](https://blog.csdn.net/zxyudia/article/details/67633321)
+[git简易指南](http://www.bootcss.com/p/git-guide/)
+[git官方文档](https://git-scm.com/book/zh/v2/)
+[pro git](http://git.oschina.net/progit/)
+[深入浅出Git教程](https://www.cnblogs.com/syp172654682/p/7689328.html)
+[深入浅出 Git](https://blog.coding.net/blog/git-from-the-inside-out)
+[猴子都能懂的GIT入门](https://backlog.com/git-tutorial/cn/)
+[Resources to learn Git](http://try.github.io/)
