@@ -4,7 +4,7 @@
 
 # Site
 title: Hank's Blog
-subtitle: 前端, CSS3, Node.js, debian, VPS
+subtitle: 前端, Node.js, debian
 description: yuan hang blog hank's blog
 author: Hank
 language: zh-CN
@@ -78,9 +78,6 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repository: https://github.com/hank-yuan/hank-yuan.github.io.git
-  branch: master
-- type: git
+  type: git
   repository: https://git.coding.net/yuan_hang/yuan_hang.git
   branch: master
