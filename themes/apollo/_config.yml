@@ -1,9 +1,10 @@
 menu:
   Blog: /
   Archive: /archives/
-  GitHub: https://github.com/hank-yuan
+  Category: /category/
   About: /about/
-  Rss: /
+
+# TODO category
 
 favicon: /favicon.png
 logo: /favicon.png
@@ -18,4 +19,8 @@ duoshuo:
 # ga: UA-xxxxxxxx-x
 
 # Copyright Infomation
-startyear: 2015
+# startyear: 2015
+
+# widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+#   - category
+#   - tag
