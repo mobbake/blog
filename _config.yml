@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
+theme: hexo-theme-apollo
 ## disqus_shortname: blog-hunk
 
 # Deployment
