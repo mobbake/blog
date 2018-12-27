@@ -1,10 +1,7 @@
 menu:
   Blog: /
   Archive: /archives/
-  Category: /category/
   About: /about/
-
-# TODO category
 
 favicon: /favicon.png
 logo: /favicon.png
@@ -24,3 +21,4 @@ duoshuo:
 # widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
 #   - category
 #   - tag
+# TODO category
