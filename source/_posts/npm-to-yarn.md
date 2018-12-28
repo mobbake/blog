@@ -96,3 +96,14 @@ CLI 命令比较
 
 `notice` 如果全局安装一个模块后bash提示找不到，使用`yarn global bin`
 查看全局目录，将些目录添加到环境变量即可
+
+`NOTICE2`设置国内的安装源，否则安装时可能因网络问题报错
+
+## yarn的配置项： 
+
+* `yarn config list // 显示所有配置项`
+* `yarn config get <key> //显示某配置项`
+* `yarn config delete <key> //删除某配置项`
+* `yarn config set <key> <value> [-g|--global] //设置配置项`
+
+设置淘宝源`yarn config set registry 'https://registry.npm.taobao.org'`

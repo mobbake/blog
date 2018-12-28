@@ -36,13 +36,13 @@ Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地�
 
 #### 提交：使用如下命令以实际提交改动：
 
-`git commit -m `"代码提交信息"
+`git commit -m`"代码提交信息"
 
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。
 
 ## git的配置及常用命令
 
-### Git的配置：
+#### Git的配置：
 
 ```
 # 显示当前的Git配置
@@ -53,7 +53,7 @@ $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
 
-### 添加/删除文件(到暂存区，即add操作）
+#### 添加/删除文件(到暂存区，即add操作）
 ```
 #可以添加一个或多个
 $ git add <file1> <file2>...
@@ -81,7 +81,7 @@ $ git rm <file1> <file2>
 $ git mv <file-original> <file-rename>
 ```
 
-### 提交到本地仓库（commit操作）
+#### 提交到本地仓库（commit操作）
 ```
 #提交暂存区的所有文件(后面的message不可缺少)
 $ git commit -m <message>
@@ -89,7 +89,7 @@ $ git commit -m <message>
 $ git commit <file1> <file2> -m <message>
 ```
 
-### 分支操作（branch）
+#### 分支操作（branch）
 ```
 # 列出所有本地分支
 $ git branch
@@ -120,7 +120,7 @@ $ git push origin --delete [branch-name]
 $ git branch -dr [remote/branch]
 ```
 
-### 查看信息：
+#### 查看信息：
 ```
 # 显示有变更的文件
 $ git status
@@ -144,7 +144,7 @@ $ touch .gitignore
 /local.properties
 .gitignore
 ```
-### 用法规则和语义：
+#### 用法规则和语义：
 ```
 # 此为注释 – 将被 Git 忽略
 
