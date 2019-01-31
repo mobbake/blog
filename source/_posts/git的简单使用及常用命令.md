@@ -156,11 +156,16 @@ doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 ```
 
 `注意`：如果你是新加的，这里需要注意的是.gitignore只能作用于没有被track的文件，也就是工作区的文件，对于add，commit操作后的文件是没有作用的，这个时候需要先把本地的缓存删除，在去提交，就可以实现忽略整个仓库文件了。
+
 ```
 git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
 ```
+
+## 连接github
+
+
 
 ### 参考
 
