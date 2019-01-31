@@ -163,9 +163,69 @@ git add .
 git commit -m 'update .gitignore'
 ```
 
+
+
 ## 连接github
 
+### 用户信息
 
+当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改：
+
+```console
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+### **1. 通过用户名密码授权github**
+
+使用`git push origin XXX` 提交代码时，如果没有ssh授权，则会提示输入github用户名，密码。
+
+输入正确后即可以提交代码
+
+### **2.使用ssh授权**
+
+#### 生成ssh
+
+Linux 与 Mac 都是默认安装了 SSH ，而 Windows 系统安装了 Git Bash 应该也是带了 SSH 的。大家可以在终端（win下在 Git Bash 里）输入 **ssh** 如果出现用法说明已安装ssh
+
+紧接着输入 **ssh-keygen -t rsa** ，什么意思呢？就是指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成：
+
+Linux/Mac 系统 在 **~/.ssh** 下，win系统在 **/c/Documents and Settings/username/.ssh** 下，都是隐藏文件，相信你们有办法查看的。
+
+接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。
+
+####  GitHub 上添加 SSH key
+
+第一步先在 GitHub 上的设置页面，点击最左侧 **SSH and GPG keys** ：
+
+
+
+![img](https://pic4.zhimg.com/80/aaa27f75cfe935ef42f947c2b02fbef7_hd.png)
+
+然后点击右上角的 **New SSH key** 按钮：
+
+
+
+![img](https://pic2.zhimg.com/80/fb4bedc5a0b1c959cdf7874c2cb79f49_hd.png)
+
+需要做的只是在 **Key** 那栏把 id_rsa.pub 公钥文件里的内容复制粘贴进去就可以了（上述示例为了安全粘贴的公钥是无效的），**Title** 那栏不需要填写，点击 **Add SSH key** 按钮就ok了。
+
+这里提醒下，怎么查看 id_rsa.pub 文件的内容？
+
+Linux/Mac 用户执行以下命令：
+
+```bash
+cd ~/.ssh
+
+cat id_rsa.pub
+
+```
+
+Windows用户，设置显示隐藏文件，可以使用 EditPlus 或者 Sublime 打开复制就行了。
+
+SSH key 添加成功之后，输入 **ssh -T git@github.com** 进行测试，如果出现以下提示证明添加成功了。
+
+![img](https://pic2.zhimg.com/80/1232ee7900fb8a6549613e382898e71d_hd.png)
 
 ### 参考
 
@@ -179,3 +239,5 @@ git commit -m 'update .gitignore'
 [深入浅出 Git](https://blog.coding.net/blog/git-from-the-inside-out)
 [猴子都能懂的GIT入门](https://backlog.com/git-tutorial/cn/)
 [Resources to learn Git](http://try.github.io/)
+
+[向 GitHub 提交代码](https://zhuanlan.zhihu.com/p/27883725)
