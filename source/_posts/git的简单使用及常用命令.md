@@ -227,6 +227,20 @@ SSH key 添加成功之后，输入 **ssh -T git@github.com** 进行测试，如
 
 ![img](https://pic2.zhimg.com/80/1232ee7900fb8a6549613e382898e71d_hd.png)
 
+### 3.github的https换为ssh
+
+#### 1.查看当前地址
+
+`git remote -v`
+
+#### 2.设置为ssh地址
+
+`git remote set-url origin git@github:USERNAME/OTHERREPOSITROY.git`
+
+#### 3.`git remote -v`
+
+> 修改完成后查看地址，配置为ssh地址就正确了
+
 ### 参考
 
 [图解git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
