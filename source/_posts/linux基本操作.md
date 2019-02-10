@@ -114,7 +114,7 @@ mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share 挂�
 
 指定用户：
 
-`ssh -l root 192.168.0.11``
+`ssh -l root 192.168.0.11`
 
 ``ssh root@192.168.0.11`
 
@@ -126,4 +126,4 @@ ssh -l root -p 12333 192.168.0.11
 ssh -p 12333 root@192.168.0.11
 ```
 
-　
+**TODO** 验证登录
