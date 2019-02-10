@@ -101,5 +101,29 @@ mount /dev/sda1 /mnt/usbdisk 挂载一个usb 捷盘或闪存设备
 mount -t smbfs -o username=user,password=pass //WinClient/share /mnt/share 挂载一个windows网络共享 
 ```
 
+## ssh远程登录
 
+`ssh`命令用于远程登录上Linux主机。
 
+常用格式：`ssh [-l login_name] [-p port] [user@]hostname`
+更详细的可以用ssh -h查看。
+
+不指定用户，默认使用root账户登录
+
+`ssh 192.168.0.11 `
+
+指定用户：
+
+`ssh -l root 192.168.0.11``
+
+``ssh root@192.168.0.11`
+
+如果修改过ssh登录端口的可以：
+
+```bash
+ssh -p 12333 192.168.0.11
+ssh -l root -p 12333 192.168.0.11
+ssh -p 12333 root@192.168.0.11
+```
+
+　
