@@ -134,3 +134,6 @@ mongo
 > db.help();
 ```
 
+## 导入csv到mongodb
+
+`mongoimport --db ao --collection students --type csv --file ./test.csv --ignoreBlanks --headerline`
