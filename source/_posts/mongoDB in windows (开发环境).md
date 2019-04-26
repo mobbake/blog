@@ -55,6 +55,12 @@ net stop MongoDB
 C:\mongodb\bin\mongod.exe --remove
 ```
 
+## 设置环境变量
+
+复制安装 地址`~\MongoDB\Server\4.0\bin`
+
+添加环境变量，path中
+
 ## 使用mongodb
 
 1.常用的命令
