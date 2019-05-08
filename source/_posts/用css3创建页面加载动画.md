@@ -7,7 +7,7 @@ categories: 翻译
 
 
 
-> 原文[Create a Bouncing Page Loader with CSS3 Animations](https://scotch.io/tutorials/create-a-bouncing-page-loader-with-css3-animation)
+> 原文[Create a Bouncing Page Loader with CSS3 Animations](https://scotch.io/tutorials/create-a-bouncing-page-loader-with-css3-animations)
 
 我需要一个页面加载时的loader，查找了之后最终决定自己做一个
 
@@ -110,6 +110,24 @@ keyframe中有两个关键字from 和to ，来定义元素的起始位置形状�
 animation: animation-name, animation-duration, animation-iteration-count, animation-direction;
 ```
 
-animation-name 定义动画的名字
+`animation-name` 定义动画的名字
 
-animation-duration： 定义动画的时间 周期
+`animation-duration`： 定义动画的时间 周期
+
+`animation-iteration-count`定义动画循环次数
+
+`animation-direction`定义动画是否轮流反向播放
+
+综上本例中
+
+```css
+animation: bouncingLoader 0.6s infinite alternate;
+```
+
+动画名字为`bouncingLoader`
+
+动画时长为0.6秒
+
+无限次循环
+
+`alternate`动画应该轮流反向播放。
